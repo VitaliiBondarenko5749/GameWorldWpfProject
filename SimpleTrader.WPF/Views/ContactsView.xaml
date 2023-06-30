@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="GameWorldWpf.Views.ContactsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimpleTrader.WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Margin="25" Padding="50"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Background="Black"
+        BorderBrush="{StaticResource BrushPrimary2}"
+        BorderThickness="3"
+        CornerRadius="10">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="10" Color="Gray" />
+        </Border.Effect>
+        <Grid Grid.IsSharedSizeScope="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                HorizontalAlignment="Center"
+                FontSize="48"
+                Text="OUR CONTACTS" Foreground="White"/>
+
+            <Grid Grid.Row="1" Margin="0 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                        <ColumnDefinition Width="300" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Text="Email: bvetal2@gmail.com" Foreground="White"/>
+                </Grid>
+
+                <Grid Grid.Row="1" Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                        <ColumnDefinition Width="300" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Text="Address: Chernivtsi, Chernivetska oblast, Ukraine"
+                               Foreground="White"/>
+                </Grid>
+
+                <Grid Grid.Row="2" Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                        <ColumnDefinition Width="300" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Text="Phone Number: +38066999333" Foreground="White"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

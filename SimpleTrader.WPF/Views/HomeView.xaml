@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="SimpleTrader.WPF.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimpleTrader.WPF.Views"
+             
+             xmlns:controls="clr-namespace:SimpleTrader.WPF.Controls"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="20" MaxWidth="1000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Welcome Text -->
+            <TextBlock Text="Welcome to GameWorld!" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Margin="0,0,0,10"/>
+
+            <!-- Photo -->
+            <Image Source="C:\Users\bveta\Downloads\SimpleTrader-master\SimpleTrader-master\SimpleTrader\SimpleTrader.WPF\Resources\OtherPhotos\gameworld-home.jpg" 
+                   Stretch="Uniform" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" Width="400" Height="300" Grid.Row="1" Margin="0,0,0,0"/>
+
+            <!-- Description Text -->
+            <TextBlock Width="700" Text="GameWorld is an exciting project that aims to create an immersive and engaging gaming experience for players. With its innovative features and cutting-edge technology, GameWorld pushes the boundaries of what is possible in the gaming industry.
+At its core, GameWorld is a platform that offers a wide variety of games for players to enjoy. From action-packed adventures to mind-bending puzzles and strategic challenges, GameWorld caters to diverse gaming preferences. The platform hosts both single-player and multiplayer games, providing opportunities for solo exploration or collaborative play with friends and other gamers around the world.
+
+One of the key strengths of GameWorld is its user-friendly interface and intuitive controls. Players can easily navigate through the platform, browse game categories, and discover new titles that suit their interests. With seamless integration across multiple devices, including PCs, consoles, and mobile devices, GameWorld ensures that players can enjoy their favorite games anytime, anywhere.
+
+In addition to its extensive game library, GameWorld offers a range of exciting features to enhance the gaming experience. Players can create personalized profiles, customize avatars, earn achievements, and compete with others on global leaderboards. The platform also facilitates social interaction, allowing players to connect with friends, join gaming communities, and engage in multiplayer competitions.
+
+GameWorld is committed to delivering high-quality graphics, realistic sound effects, and immersive gameplay. It leverages the latest advancements in technology, such as virtual reality (VR) and augmented reality (AR), to provide players with captivating and lifelike gaming experiences. Whether exploring virtual worlds, solving complex puzzles, or engaging in intense battles, GameWorld ensures that players are fully immersed in the game's universe.
+
+With regular updates and new game releases, GameWorld keeps the gaming experience fresh and exciting. It collaborates with talented game developers and designers to deliver innovative and captivating content. The platform also values user feedback and actively incorporates player suggestions to continually improve and evolve the gaming experience.
+
+In conclusion, GameWorld is an ambitious project that revolutionizes the gaming industry. With its diverse game selection, intuitive interface, immersive features, and commitment to excellence, GameWorld aims to provide players with unforgettable gaming adventures and become a leading destination for gamers worldwide." 
+                       TextWrapping="Wrap" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Top" 
+                       Grid.Row="2"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>
